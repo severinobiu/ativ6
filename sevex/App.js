@@ -9,7 +9,7 @@ export default function ChatScreen() {
   useEffect(() => {
     async function fetchMessages() {
       try {
-        const response = await axios.get('http://localhost:3000/messages'); // Substitua com a URL do seu json-server
+        const response = await axios.get('http://localhost:3000/messages'); 
         setMessages(response.data);
       } catch (error) {
         console.error('Erro ao buscar mensagens:', error);
@@ -82,14 +82,14 @@ export default function ChatScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#000000', // Fundo preto
+    backgroundColor: '#000000', 
     paddingTop: 60,
     paddingHorizontal: 20,
   },
   header: {
     fontSize: 24,
     fontWeight: '700',
-    color: '#FFD700', // Amarelo ouro para o cabeçalho
+    color: '#FFD700', 
     marginBottom: 12,
   },
   options: {
@@ -98,7 +98,7 @@ const styles = StyleSheet.create({
     marginBottom: 18,
   },
   optionText: {
-    color: '#FFD700', // Amarelo ouro
+    color: '#FFD700', 
     fontWeight: '500',
   },
   sortButton: {
@@ -107,12 +107,12 @@ const styles = StyleSheet.create({
   },
   messageItem: {
     flexDirection: 'row',
-    backgroundColor: '#1A1A1A', // Cinza muito escuro
+    backgroundColor: '#1A1A1A', 
     borderRadius: 16,
     padding: 14,
     marginBottom: 14,
     alignItems: 'center',
-    shadowColor: '#FFD700', // Sombra amarela
+    shadowColor: '#FFD700', 
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.15,
     shadowRadius: 6,
@@ -124,7 +124,7 @@ const styles = StyleSheet.create({
     borderRadius: 26,
     marginRight: 14,
     borderWidth: 2,
-    borderColor: '#FFD700', // Borda amarela
+    borderColor: '#FFD700', 
   },
   textContainer: {
     flex: 1,
@@ -132,10 +132,10 @@ const styles = StyleSheet.create({
   name: {
     fontWeight: 'bold',
     fontSize: 16,
-    color: '#FFFFFF', // Texto branco
+    color: '#FFFFFF', 
   },
   message: {
-    color: '#CCCCCC', // Cinza claro
+    color: '#CCCCCC', 
     fontSize: 14,
   },
   rightSection: {
@@ -144,10 +144,10 @@ const styles = StyleSheet.create({
   },
   time: {
     fontSize: 12,
-    color: '#999999', // Cinza médio
+    color: '#999999', 
   },
   badge: {
-    backgroundColor: '#FFD700', // Fundo amarelo
+    backgroundColor: '#FFD700', 
     borderRadius: 12,
     paddingHorizontal: 8,
     paddingVertical: 2,
@@ -156,7 +156,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   badgeText: {
-    color: '#000000', // Texto preto no badge
+    color: '#000000', 
     fontSize: 13,
     fontWeight: 'bold',
   },
@@ -166,13 +166,13 @@ const styles = StyleSheet.create({
     left: 0,
     right: 0,
     height: 70,
-    backgroundColor: '#1A1A1A', // Cinza muito escuro
+    backgroundColor: '#1A1A1A', 
     flexDirection: 'row',
     justifyContent: 'space-around',
     alignItems: 'center',
-    borderTopColor: '#333333', // Cinza escuro
+    borderTopColor: '#333333', 
     borderTopWidth: 1,
-    shadowColor: '#FFD700', // Sombra amarela
+    shadowColor: '#FFD700', 
     shadowOffset: { width: 0, height: -2 },
     shadowOpacity: 0.1,
     shadowRadius: 8,
@@ -180,7 +180,7 @@ const styles = StyleSheet.create({
   },
   navText: {
     fontSize: 11,
-    color: '#FFD700', // Amarelo ouro
+    color: '#FFD700', 
     marginTop: 4,
     textAlign: 'center',
   },
